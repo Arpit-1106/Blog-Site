@@ -16,9 +16,17 @@
 - cd backend
 - npm install
 
-#### 1.1 Create a .env file in the backend folder and insert given code:
+- Set up MongoDB
+- Go to MongoDB Atlas and create a free account
 
-- mongodb+srv://<username>:<password>@<cluster-address>/<database>?<options>
+- Create a free cluster
+
+- Get your connection URI (it will look like mongodb+srv://...)
+
+
+#### 1.1 Create a .env file in the backend folder and insert your connection URI:
+
+- MONGODB_URI = mongodb+srv:// your connection URI
 
 #### 1.2 Start the server (CMD):
 
