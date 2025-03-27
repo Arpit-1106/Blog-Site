@@ -1,12 +1,11 @@
-// Import mongoose
+
 const mongoose = require('mongoose');
 
-// Define the schema (structure of your blog posts)
 const postSchema = new mongoose.Schema({
   title: {
     type: String,
-    required: [true, 'Post title is required'], // Makes this field mandatory
-    trim: true // Removes whitespace from both ends
+    required: [true, 'Post title is required'], 
+    trim: true 
   },
   content: {
     type: String,
@@ -18,11 +17,9 @@ const postSchema = new mongoose.Schema({
     trim: true
   }
 }, { 
-  timestamps: true // Automatically adds createdAt and updatedAt fields
+  timestamps: true
 });
 
-// Create the model from the schema
 const Post = mongoose.model('Post', postSchema);
 
-// Export the model to use it in other files
 module.exports = Post;
