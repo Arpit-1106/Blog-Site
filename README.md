@@ -7,7 +7,7 @@
 
 ### Clone Repository
 
-- git clone https://github.com/Arpit-1106/blogging-platform
+- git clone https://github.com/Arpit-1106/Blog-Site
 
 - cd blogging-platform
 
